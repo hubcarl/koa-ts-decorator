@@ -11,7 +11,7 @@ const app = new koa();
 const Router = new router();
 app.use(body());
 
-registerRouter(Router, [ UserController ]);
+registerRouter(Router, [ HomeController, UserController ]);
 
 app.use(Router.routes());
 
